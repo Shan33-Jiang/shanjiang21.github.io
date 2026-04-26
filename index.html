@@ -110,8 +110,8 @@ description: "Love, live and lost."
   /* ── Handwritten intro hero (replaces featured post) ── */
   .ny-intro {
     display: grid;
-    grid-template-columns: 0.9fr 1.1fr;
-    gap: 3.5rem;
+    grid-template-columns: 280px 1fr;     /* avatar column shrunk from .9fr → fixed 280px */
+    gap: 3rem;
     align-items: center;
     margin: 1rem 0 4.5rem;
     padding-bottom: 3rem;
@@ -119,6 +119,7 @@ description: "Love, live and lost."
   }
   .ny-intro__photo {
     position: relative;
+    max-width: 240px;                      /* hard-cap so the photo doesn't dominate */
   }
   .ny-intro__photo img {
     width: 100%;
@@ -128,8 +129,8 @@ description: "Love, live and lost."
     filter: grayscale(25%) contrast(1.03);
     box-shadow:
       0 1px 0 rgba(0,0,0,.05),
-      0 20px 44px -18px rgba(30,25,20,.35),
-      0 8px 18px -10px rgba(30,25,20,.18);
+      0 16px 32px -16px rgba(30,25,20,.32),
+      0 6px 14px -8px rgba(30,25,20,.16);
     transform: rotate(-1.2deg);
     background: #f0ede8;
     transition: transform .6s cubic-bezier(.2,.7,.2,1), filter .6s ease;
@@ -206,15 +207,18 @@ description: "Love, live and lost."
   @keyframes intro-underline { to { transform: scaleX(1); } }
 
   .ny-intro__lede {
-    font-family: var(--ff-body);
-    font-size: 1.35rem;
-    line-height: 1.6;
-    color: #2a2a2a;
+    font-family: var(--ff-head);
+    font-size: 1.65rem;
+    line-height: 1.5;
+    color: #1a1a1a;
     font-style: italic;
+    font-weight: 400;
     margin: 0 0 1.8rem;
-    max-width: 42em;
+    max-width: 38em;
+    letter-spacing: -0.005em;
+    font-variation-settings: "opsz" 60;
   }
-  .ny-intro__lede p { margin: 0 0 .8rem; }
+  .ny-intro__lede p { margin: 0 0 1.05rem; }
   .ny-intro__lede p:last-child { margin-bottom: 0; }
   .ny-intro__lede em { font-style: normal; color: var(--red); font-weight: 500; }
 
@@ -245,11 +249,11 @@ description: "Love, live and lost."
   @media (max-width: 860px) {
     .ny-intro {
       grid-template-columns: 1fr;
-      gap: 2.5rem;
+      gap: 2rem;
       margin-bottom: 3rem;
     }
-    .ny-intro__photo { max-width: 340px; margin: 0 auto; }
-    .ny-intro__photo figcaption { font-size: 1.25rem; }
+    .ny-intro__photo { max-width: 200px; margin: 0 auto; }
+    .ny-intro__photo figcaption { font-size: 1.1rem; }
   }
 
   /* ── Hero (legacy — kept for any other pages referencing it) ── */
@@ -978,7 +982,7 @@ description: "Love, live and lost."
     </h1>
     <div class="ny-intro__lede">
       <p>A new <em>mother</em>. A returning <em>runner</em>. A daughter, and an annoying reader who still gives <em>harsh comments</em>.</p>
-      <p>Raised in Anhui, schooled between Beijing and New York — a <em>product manager</em> by trade (TikTok → Shopee → a new chapter), now writing out of <em>1°17′N</em>.</p>
+      <p>Raised in Anhui, schooled between Beijing and New York. A <em>product manager</em> by trade across consumer tech and cross-border e-commerce, now writing out of <em>1°17′N</em>.</p>
       <p>This corner of the internet is quiet essays, a walking map, and the small <em>defiances</em> that keep me me.</p>
     </div>
     <div class="ny-intro__cta">
