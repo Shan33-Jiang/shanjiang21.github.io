@@ -254,9 +254,19 @@ permalink: /travel/
   }
 </style>
 
-{%- assign trips = site.data.travel | sort: 'date' | reverse -%}
-{%- assign countries = trips | map: 'country' | uniq -%}
-{%- assign cities    = trips | map: 'place'   | uniq -%}
+{%- comment -%}
+  When _data/travel.yml has no entries the assign returns `false`, which
+  blows up `| map`. Guard against that with a sensible default.
+{%- endcomment -%}
+{%- if site.data.travel and site.data.travel.size > 0 -%}
+  {%- assign trips = site.data.travel | sort: 'date' | reverse -%}
+  {%- assign countries = trips | map: 'country' | uniq -%}
+  {%- assign cities    = trips | map: 'place'   | uniq -%}
+{%- else -%}
+  {%- assign trips = '' | split: '' -%}
+  {%- assign countries = '' | split: '' -%}
+  {%- assign cities = '' | split: '' -%}
+{%- endif -%}
 {%- assign photo_count = 0 -%}
 {%- for t in trips -%}{%- if t.photos -%}{%- assign photo_count = photo_count | plus: t.photos.size -%}{%- endif -%}{%- endfor -%}
 
@@ -267,6 +277,18 @@ permalink: /travel/
     <h1 class="tv-title">Travels</h1>
     <p class="tv-subtitle">{{ page.description }}.</p>
   </header>
+
+  {% if trips.size == 0 %}
+  <section class="tv-coming-soon" aria-label="Coming soon">
+    <p class="tv-coming-soon__eyebrow">The Field Book</p>
+    <h2 class="tv-coming-soon__title">Logs in progress.</h2>
+    <p class="tv-coming-soon__body">
+      This is where trips will land — a pin on the map, a year, a few photographs,
+      a short note. The first entries are being written up. Check back shortly,
+      or <a href="/writings/">read a dispatch</a> in the meantime.
+    </p>
+  </section>
+  {% else %}
 
   <section class="tv-stats" aria-label="Summary">
     <div class="tv-stat"><div class="tv-stat__n">{{ countries.size }}</div><div class="tv-stat__l">Countries</div></div>
@@ -310,6 +332,7 @@ permalink: /travel/
 
     {%- if forloop.last -%}</div></section>{%- endif -%}
   {%- endfor -%}
+  {% endif %}
 
 </div>
 

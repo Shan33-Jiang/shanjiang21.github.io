@@ -1,14 +1,15 @@
 
 #### About me
 
-In 2020, I graduated from Mailman school of Public Health, Columbia University. During 2020-2022, I worked in [TikTok](https://www.tiktok.com/) as a rookie product manager, after being locked down in Shanghai for 2 months, I decided to seek a new place to continue my professional life. After moving to Singapore, I worked in Shopee for 15 months until Oct 2023, focused on recommendation strategy design for cross-border e-commerce business.  
+I'm Shan, a product manager, writer, reader, and (newly) a mother. In 2020 I graduated from the Mailman School of Public Health at Columbia University. From 2020 to 2022 I worked at [TikTok](https://www.tiktok.com/) as a rookie PM; after being locked down in Shanghai for two months, I sought a new place to continue my professional life. I moved to Singapore and spent fifteen months at Shopee on cross-border e-commerce recommendation strategy until October 2023.
 
-Currently, I am enjoying my career break. If you think I am a good fit, please hit my [curriculum vitae](./Shan_CV_2023.pdf).
+Six months ago I started a new chapter at a new company. **Fully remote, 5/5.** Work and home share the same desk. I'm still trying to adapt to the new tempo.
 
-However, I do believe the occupational identity is merely a tiny facet of me:
-* **Biological Structure:** A five-foot-six girl (she/her/hers).
-* **Social identity**: a daughter, runner and an annoying reader who gives harsh comments.
-* **A Critical Don Quixote**: An Anti-social tomboy.
+But occupational identity is a tiny facet of any of us:
+
+* **Now:** A new mother. A returning runner. A writer in pause.
+* **Always:** A daughter, an annoying reader who still gives harsh comments.
+* **Underneath:** A critical Don Quixote — an anti-social tomboy.
 
 #### Digital footprints
 
@@ -18,7 +19,17 @@ However, I do believe the occupational identity is merely a tiny facet of me:
   -- Blowin' in the Wind, Bob Dylan
 ````
 
-<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1mipXeTROxyXGCO7-LrqIvDfRgNgKZrXU" width="560" height="412"></iframe>
+<div class="about-journey" markdown="0">
+  <p class="about-journey__eyebrow">Mapping</p>
+  <ol class="about-journey__list">
+    <li><span class="aj-year">1994</span><span class="aj-place">Anhui, China</span><em class="aj-coord">30.64° N · 117.85° E</em></li>
+    <li><span class="aj-year">2014</span><span class="aj-place">Beijing</span><em class="aj-coord">39.93° N · 116.39° E</em></li>
+    <li><span class="aj-year">2018</span><span class="aj-place">New York City</span><em class="aj-coord">40.71° N · 74.01° W</em></li>
+    <li><span class="aj-year">2020</span><span class="aj-place">Beijing</span><em class="aj-coord">returned home</em></li>
+    <li><span class="aj-year">2022</span><span class="aj-place">Singapore</span><em class="aj-coord">1.35° N · 103.82° E</em></li>
+  </ol>
+  <a href="/travel/" class="about-journey__link">See the full map <span aria-hidden="true">→</span></a>
+</div>
 
 I was Born and raised up in *Anhui, China*(30.64° N, 117.85° E),
 <br>
